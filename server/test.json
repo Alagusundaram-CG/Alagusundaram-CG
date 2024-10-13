@@ -1,0 +1,101 @@
+{
+    "input": {
+        "mobile_ready": null
+    },
+    "segments": [
+        {
+            "title": "Specially for you",
+            "count": 19881,
+            "hits": [
+                {
+                    "Id": "a55c9cc9c21e4fc683c8c6857f3d0c75",
+                    "Title": "Fireboy and Watergirl 1 Forest Temple",
+                    "Developer": "Agame",
+                    "Description": "Fireboy and Watergirl, made by Oslo Albet, are exploring the Forest Temple in search of diamonds. Switch between Fireboy & Watergirl and play alone or together as 2 players. The goal is to reach the exit safely, so be careful. Fireboy cannot touch water and Watergirl cannot touch fire. ",
+                    "Sub Type": "Javascript",
+                    "Game URL": "https://html5.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75",
+                    "GD URL": "https://gamedistribution.com/games/fireboy-and-watergirl-1-forest-temple",
+                    "Genres": [
+                        "Adventure"
+                    ],
+                    "Tags": [
+                        "2d",
+                        "2players",
+                        "logic",
+                        "platformer"
+                    ],
+                    "Assets": [
+                        "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x384.jpeg",
+                        "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg",
+                        "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-1280x720.jpeg",
+                        "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-1280x550.jpeg"
+                    ],
+                    "Instructions": "Move with WASD and the arrow keys.\nOn mobile you can change controls in the options menu. ",
+                    "Key Features": "",
+                    "Mobile Ready": [
+                        "For IOS",
+                        "For Android"
+                    ],
+                    "Is Exclusive": "Yes",
+                    "Gender": [
+                        "Male",
+                        "Female"
+                    ],
+                    "Age Group": [
+                        "Kids",
+                        "Teens"
+                    ],
+                    "No Blood": "No",
+                    "No Cruelty": "No",
+                    "Kids Friendly": "No",
+                    "Width": 900,
+                    "Height": 510
+                },
+                {
+                    "Id": "a55c9cc9c21e4fc683c8c6857f3d0c75",
+                    "Title": "Fireboy and Watergirl 1 Forest Temple",
+                    "Developer": "Agame",
+                    "Description": "Fireboy and Watergirl, made by Oslo Albet, are exploring the Forest Temple in search of diamonds. Switch between Fireboy & Watergirl and play alone or together as 2 players. The goal is to reach the exit safely, so be careful. Fireboy cannot touch water and Watergirl cannot touch fire. ",
+                    "Sub Type": "Javascript",
+                    "Game URL": "https://html5.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75",
+                    "GD URL": "https://gamedistribution.com/games/fireboy-and-watergirl-1-forest-temple",
+                    "Genres": [
+                        "Adventure"
+                    ],
+                    "Tags": [
+                        "2d",
+                        "2players",
+                        "logic",
+                        "platformer"
+                    ],
+                    "Assets": [
+                        "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x384.jpeg",
+                        "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-512x512.jpeg",
+                        "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-1280x720.jpeg",
+                        "https://img.gamedistribution.com/a55c9cc9c21e4fc683c8c6857f3d0c75-1280x550.jpeg"
+                    ],
+                    "Instructions": "Move with WASD and the arrow keys.\nOn mobile you can change controls in the options menu. ",
+                    "Key Features": "",
+                    "Mobile Ready": [
+                        "For IOS",
+                        "For Android"
+                    ],
+                    "Is Exclusive": "Yes",
+                    "Gender": [
+                        "Male",
+                        "Female"
+                    ],
+                    "Age Group": [
+                        "Kids",
+                        "Teens"
+                    ],
+                    "No Blood": "No",
+                    "No Cruelty": "No",
+                    "Kids Friendly": "No",
+                    "Width": 900,
+                    "Height": 510
+                }
+            ]
+        }
+    ]
+}

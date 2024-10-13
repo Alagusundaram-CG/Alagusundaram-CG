@@ -1,0 +1,61 @@
+{
+    "work_gallery": [
+        
+        {
+            "description": "Chennaigames Work Gallery",
+            "type":"video",
+            "thumbnail": "wg_3.avif",
+            "preview": "https://youtu.be/7VnEZFKDkVo?&autoplay=1"
+        },
+        {
+            "description": "Chennaigames Work Gallery",
+            "type":"video",
+            "thumbnail": "wg_4.avif",
+            "preview": "https://youtu.be/pQokuI8_hKQ?&autoplay=1"
+        },
+        {
+            "description": "Chennaigames Work Gallery?&autoplay=1",
+            "type":"video",
+            "thumbnail": "wg_5.avif",
+            "preview": "https://youtu.be/FsQKSwpfEFM"
+        },
+        {
+            "description": "Chennaigames Work Gallery",
+            "type":"image",
+            "thumbnail": "wg_1.avif",
+            "preview": "wg_1.avif"
+        },
+        {
+            "description": "Chennaigames Work Gallery",
+            "type":"image",
+            "thumbnail": "wg_2.avif",
+            "preview": "wg_2.avif"
+        },
+        {
+            "description": "Chennaigames Work Gallery",
+            "type":"image",
+            "thumbnail": "wg_6.avif",
+            "preview": "wg_6.avif"
+        }
+    ],
+    "team_gallery": [
+        {
+            "description": "Chennaigames Team Gallery",
+            "type":"image",
+            "thumbnail": "tg_1.avif",
+            "preview": "tg_1.avif"
+        },
+        {
+            "description": "Chennaigames Team Gallery",
+            "type":"image",
+            "thumbnail": "tg_2.avif",
+            "preview": "tg_2.avif"
+        },
+        {
+            "description": "Chennaigames Team Gallery",
+            "type":"image",
+            "thumbnail": "tg_3.avif",
+            "preview": "tg_3.avif"
+        }
+    ]
+}

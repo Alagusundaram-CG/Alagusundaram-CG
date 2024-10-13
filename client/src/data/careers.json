@@ -1,0 +1,75 @@
+[
+    {
+        "role": "GAME DESIGNER",
+        "description": [
+            "Develop game concepts, mechanics, and storylines.",
+            "Create detailed design documents.",
+            "Collaborate with artists, developers, and other designers.",
+            "Balance and fine-tune gameplay elements."
+        ],
+        "experience": "3+ years",
+        "skills": "Photoshop, Unity 3D"
+    },
+    {
+        "role": "TECHNICAL ARTIST",
+        "description": [
+            "Create high-quality 3D models and textures for characters, environments, and props.",
+            "Work closely with the art and design teams to achieve the desired visual style.",
+            "Optimize assets for performance and memory usage."
+        ],
+        "experience": "3+ years",
+        "skills": "Blender, Photoshop"
+    },
+    {
+        "role": "GAME TESTER",
+        "description": [
+            "Test and debug game features to ensure stability and performance.",
+            "Document and report bugs and issues.",
+            "Collaborate with developers to resolve issues.",
+            "Conduct regression testing."
+        ],
+        "experience": "2+ years",
+        "skills": "Mantis, any automated Testing Tools will be advantage"
+    },
+    {
+        "role": "GAME PROGRAMMER",
+        "description": [
+            "Write clean, efficient, and well-documented code.",
+            "Collaborate with designers, artists, and other programmers to implement gameplay mechanics.",
+            "Strong analytical and problem-solving abilities.",
+            "Solid understanding of mathematics, physics, and 3D mathematics used in game development.",
+            "Ability to profile and optimize code for performance and memory usage.",
+            "Proficient in debugging tools and techniques.",
+            "Excellent teamwork and communication skills."
+        ],
+        "experience": "3+ years",
+        "skills": "Unity 3D, C#, Git"
+    },
+    {
+        "role": "BACK-END DEVELOPER",
+        "description": [
+            "Experience with relational and NoSQL databases.",
+            "Proven experience in designing and developing RESTful APIs.",
+            "Knowledge of security best practices.",
+            "Experience with cloud platforms such as AWS, Google Cloud, or Azure.",
+            "Ability to optimize applications for performance and scalability.",
+            "Strong problem-solving and analytical skills.",
+            "Excellent teamwork and communication abilities.",
+            "Proficiency in writing unit tests and integration tests."
+        ],
+        "experience": "2+ years",
+        "skills": "NodeJS, NoSQL, Redis, Linux"
+    },
+    {
+        "role": "SOCIAL MEDIA EXECUTIVE",
+        "description": [
+            "Experience in creating engaging multimedia content.",
+            "Familiarity with social media advertising platforms such as Facebook Ads Manager and LinkedIn Campaign Manager.",
+            "Excellent knowledge of Facebook, Twitter, LinkedIn, Instagram, TikTok, and other social media best practices.",
+            "Strong copywriting and content creation skills.",
+            "In-depth understanding of the gaming industry and its trends."
+        ],
+        "experience": "2+ years",
+        "skills": "Good exposure to shape a brand for strong online presence"
+    }
+]

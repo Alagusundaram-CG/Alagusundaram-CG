@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HRX-Leaderboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="plugins/datatables/css/jquery.dataTables.min.css" />
+    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h1 class="page-header">LEADERBOARD</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <table id="users" class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th>POS</th>
+                            <th>NAME</th>
+                            <th>LEAGUE</th>
+                            <th>LICENSED CAR</th>
+                            <!-- <th>SCORE</th>
+                            <th>TOTAL WINS</th> -->
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="plugins/jquery/js/jquery-3.1.0.min.js"></script>
+<script src="plugins/datatables/js/jquery.dataTables.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script>
+
+    var dataSet = [];
+    $(document).ready(function () {
+        datatablecall();
+    });
+
+
+    function datatablecall() {
+        //preventDefault();
+        $('#users').DataTable({
+            "bDestroy": true,
+            "bInfo": false, //Dont display info e.g. "Showing 1 to 4 of 4 entries"
+            "paging": true,//Dont want paging     
+            "lengthChange": false,
+            "bPaginate": true,
+            "serverSide": true,
+            "bAutoWidth": false,
+            "searching": false,
+            "ajax": {
+                url: 'http://localhost:3001/api/get_top_10',
+                data: inputObj,
+                type: 'POST',
+                dataType: 'json',
+            },
+
+            "columns": [
+                { "data": "rank", orderable: false },
+                // { "data": "gid", orderable: false },
+                { "data": "name", orderable: false },
+                // { "data": "league", orderable: false },
+                // { "data": "o_unit", orderable: false },
+                { "data": "scr", orderable: false },
+                { "data": "reward", orderable: false },
+                {
+                    "mData": function (source, type, val) {
+                        return "<center><i class='glyphicon glyphicon-edit' style='font-size:20px;'  onclick='updatePoints(" + source.gid + "," + source.scr + ");'></i></center>";
+                    }
+                }
+            ],
+        });
+    }
+
+</script>
+
+</html>

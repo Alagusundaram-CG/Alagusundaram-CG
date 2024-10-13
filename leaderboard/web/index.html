@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>HRX-Leaderboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="plugins/datatables/css/jquery.dataTables.min.css" />
+    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+
+    table,
+    td {
+        background-color: black;
+        color: white;
+    }
+
+    thead {
+        background-color: #131313;
+        color: white;
+    }
+
+    h1 {
+        color: white;
+    }
+
+    li {
+        padding-left: 10px;
+    }
+
+    .table-bordered,
+    .table-bordered>tbody>tr>td,
+    .table-bordered>tbody>tr>th,
+    .table-bordered>tfoot>tr>td,
+    .table-bordered>tfoot>tr>th,
+    .table-bordered>thead>tr>td,
+    .table-bordered>thead>tr>th {
+        border: 2px solid #262424;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <br />
+        </div>
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <span class="navbar-brand">HRX-LEADERBOARD</span>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><button class="btn btn-default" style="height: 50px;" onclick="datatablecall('SCORE')">OVERALL
+                            SCORE</button></li>
+                    <li><button class="btn btn-default" style="height: 50px;" onclick="datatablecall('DRIFT')">MOST
+                            DRIFTER</button></li>
+                    <li><button class="btn btn-default" style="height: 50px;" onclick="datatablecall('TURNER')">PERFECT
+                            TURNER</button></li>
+                    <li><button class="btn btn-default" style="height: 50px;" onclick="datatablecall('RACER')">PERFECT
+                            RACER</button></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><button class="btn btn-danger" style="height: 50px;"><span
+                                class="glyphicon glyphicon-pencil"></span>&nbsp; MODIFY DATA</button></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="col-12">
+                <table id="users" class="table table-striped table-bordered table-hover" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th width="10%">POS</th>
+                            <th width="10%">GID</th>
+                            <th width="30%">NAME</th>
+                            <th width="10%">LEAGUE</th>
+                            <th width="10%">LICENSED CAR</th>
+                            <th width="10%">SCORE</th>
+                            <th width="10%">TOTAL WINS</th>
+                            <th width="10%">ACTION</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+    </div>
+    <input type="text" id="scrtype" hidden>
+</body>
+
+<script src="plugins/jquery/js/jquery-3.1.0.min.js"></script>
+<script src="plugins/datatables/js/jquery.dataTables.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script>
+    datatablecall('SCORE');
+
+
+    function datatablecall(value) {
+        //preventDefault();
+        $("#scrtype").val(value);
+        $('#users').DataTable({
+            "bDestroy": true,
+            "bInfo": false, //Dont display info e.g. "Showing 1 to 4 of 4 entries"
+            "paging": true,//Dont want paging     
+            "lengthChange": false,
+            "bPaginate": true,
+            "serverSide": true,
+            "bAutoWidth": false,
+            "searching": false,
+            "ajax": {
+                url: 'http://localhost:3001/api/get_top_10',
+                type: 'GET',
+                data: {},
+                dataType: 'json',
+            },
+            "columns": [
+                { "data": "rank", orderable: false },
+                { "data": "gid", orderable: false },
+                { "data": "name", orderable: false },
+                { "data": "league", orderable: false },
+                { "data": "o_unit", orderable: false },
+                { "data": "scr", orderable: false },
+                { "data": "t_wins", orderable: false },
+                {
+                    "mData": function (source, type, val) {
+                        return "<center><i class='glyphicon glyphicon-edit' style='font-size:20px;'  onclick='updatePoints(" + source.gid + "," + source.scr + ");'></i></center>";
+                    }
+                }
+            ],
+        });
+
+    }
+
+
+    function updatePoints(gid, scr) {
+        var type = $("#scrtype").val();
+        var scre = prompt('Enter points to change', scr);
+        // console.log(scre);
+        // if(!Number.isInteger(scre))
+        // {
+        //     alert("Enter valid points");
+        //     //var scr = prompt('Enter points to change',scr);
+        //     return false;
+        // }  
+
+        //let bar = confirm('Confirm or deny');
+        //alert(type);
+        $.ajax({
+            method: "POST",
+            url: "http://localhost:3000/update",
+            data: { scr: scre, gid: gid, type: type },
+            dataType: "json"
+        }).done(function (msg) {
+
+            datatablecall(type);
+            // if(msg.status=='CM'){
+            //   alert("Count is Different");
+            // }else if(msg.status=='AE'){
+            //   alert("Already Exist");
+            // }else{
+            //   alert("Update Successfully");
+            // }
+
+            // getAllEmpty();
+            // clearDataTable();
+            // window.location.href="mudraTable.php";
+        });
+    }
+</script>
+
+</html>

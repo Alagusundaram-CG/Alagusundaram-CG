@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #timer {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <div id="timer">60:00:00:00</div>
+    </div>
+
+    <script>
+        const minutes = 86400;
+        const targetTime = Date.now() + minutes * 60 * 1000;
+
+        function updateTimer() {
+            const currentTime = Date.now();
+            const difference = targetTime - currentTime;
+
+            if (difference <= 0) {
+                document.getElementById('timer').textContent = '00:00:00:00';
+                clearInterval(timerInterval);
+                alert('Time is up!');
+                return;
+            }
+
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+            document.getElementById('timer').textContent =
+                String(days).padStart(2, '0') + ':' +
+                String(hours).padStart(2, '0') + ':' +
+                String(minutes).padStart(2, '0') + ':' +
+                String(seconds).padStart(2, '0');
+        }
+
+        const timerInterval = setInterval(updateTimer, 1000);
+        updateTimer(); // Initial call to display the countdown immediately
+    </script>
+
+</body>
+
+</html>

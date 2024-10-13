@@ -1,0 +1,101 @@
+[
+    {
+        "title": "MR RACER : PREMIUM RACING GAME",
+        "link": "/mrracer",
+        "thumbnail_image": "./images/game-icons/mrracer_premium.avif",
+        "description": "#1 PREMIUM OFFLINE & ONLINE CAR RACING GAME!, It is a thrilling & challenging Racing game to wow you!",
+        "download_endpoints": [
+            {
+                "source": "android",
+                "url": "https://play.google.com/store/apps/details?id=com.chennaigames.mrracer.premium&hl=en_IN&gl=US"
+            },
+            {
+                "source": "googletv",
+                "url": "https://play.google.com/store/apps/details?id=com.chennaigames.mrracer.carracing"
+            },
+            {
+                "source": "appletv",
+                "url": "https://apps.apple.com/us/app/mr-racer-multiplayer-racing/id6457259862"
+            },
+            {
+                "source": "amazon",
+                "url": "https://www.amazon.in/MR-RACER-Premium-Multiplayer-Racing/dp/B0CB896R63/ref=sr_1_1?crid=2ECL9OK7LQP8V&dib=eyJ2IjoiMSJ9.x36lRDIasfd0kohWrVLBBq5_EfQ31kP4vcOveIdOEaqDrlJlpXQXIv6xgMhkuCRrK-CtwCu3t21DPurGrPsFtR5jxPNOVx4gJrhlZ6kXVI7HdgvUenlQeqNRIgjcm4nPWDGvAuc-WqUTXakqO5oK-A.VQhn4kodC4o64CLLkKknrP4yKV_kjHfVCLEMdUTk-kA&dib_tag=se&keywords=mr+racer&qid=1717160024&s=mobile-apps&sprefix=mr+racer%2Cmobile-apps%2C184&sr=1-1"
+            },
+            {
+                "source": "crazygames",
+                "url": "https://www.crazygames.com/game/mr-racer---car-racing"
+            },
+            {
+                "source": "jio",
+                "url": "https://jiogames.com/"
+            },
+            {
+                "source": "poki",
+                "url": "https://poki.com/en/g/mr-racer-car-racing"
+            },
+            {
+                "source": "y8",
+                "url": "https://www.y8.com/games/mr_racer"
+            },
+            {
+                "source": "kongregate",
+                "url": "https://www.kongregate.com/games/ChennaiGames/mr-racer-car-racing"
+            },
+            {
+                "source": "nowgg",
+                "url": "https://now.us/apps/chennaigames-studio-private-limited/51921/mr-racer-car-racing.html"
+            },
+            {
+                "source": "yandex",
+                "url": "https://yandex.com/games/app/247958"
+            },
+            {
+                "source": "gamepix",
+                "url": "https://www.gamepix.com/play/mr-racer-car-racing-game"
+            }   
+        ]
+    },
+    {
+        "title": "LUDOX",
+        "link": "/ludox",
+        "thumbnail_image": "./images/game-icons/ludox.avif",
+        "description": "LudoX is a modern twist on the classic Ludo board game, designed to provide an engaging and interactive experience for players of all ages.",
+        "download_endpoints": [
+            {
+                "source": "android",
+                "url": "https://play.google.com/store/apps/details?id=com.chennaigames.ludox"
+            }
+        ]
+    },
+    {
+        "title": "MATH KING",
+        "link": "/mathking",
+        "thumbnail_image": "./images/game-icons/mathking.avif",
+        "description": "THE ULTIMATE GAME FOR MASTERING CALCULATIONS WITH SPEED AND PRECISION IN A FUN AND ENGAGING WAY!",
+        "download_endpoints": [
+            {
+                "source": "android",
+                "url": "https://play.google.com/store/apps/details?id=com.chennaigames.mathking"
+            }
+        ]
+    },
+    {
+        "title": "EMOJI SMASHER",
+        "link": "/emojismasher",
+        "thumbnail_image": "./images/game-icons/emoji_smasher.avif",
+        "description": "A FAST-PACED MOBILE GAME WHERE PLAYERS TAP, SWIPE, AND SMASH COLORFUL EMOJIS",
+        "download_endpoints": [
+            {
+                "source": "android",
+                "url": "https://play.google.com/store/apps/details?id=com.chennaigames.emojismasher"
+            }
+        ]
+    },
+    {
+        "title": "POR : (PLAYERS ON RETALIATION)",
+        "link": "/por",
+        "thumbnail_image": "./images/game-icons/por.avif",
+        "description": "POR (Players on Retaliation) is a new Shooting Battle Royale with nonstop action pack, thrill & revenge with a strong storyline based Shooter!",
+        "download_endpoints": []
+    }
+]

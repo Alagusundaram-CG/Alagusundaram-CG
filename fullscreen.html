@@ -1,0 +1,24 @@
+<script>
+function isDesktopSiteEnabled() {
+    const userAgent = navigator.userAgent;
+
+    // List of common desktop User-Agents to check against
+    const desktopAgents = [
+        "Mozilla/5.0 (Windows NT",
+        "Mozilla/5.0 (Macintosh",
+        "X11; Linux",
+        "X11; Ubuntu",
+        "X11; Fedora"
+    ];
+
+    return desktopAgents.some(agent => userAgent.includes(agent));
+}
+
+if (isDesktopSiteEnabled()) {
+    alert("Desktop site enabled.");
+    console.log("Desktop site mode is likely enabled.");
+} else {
+    alert("Desktop site not enabled.");
+    console.log("Desktop not enabled.");
+}
+</script>
